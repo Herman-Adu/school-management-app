@@ -27,7 +27,15 @@ yarn-error.log*
 
 # local env files
 .env
-.env*.local
+.env.*
+!.env.example
+
+# local secrets / compose overrides (contain credentials)
+docker-compose.yml
+docker-compose.override.yml
+!docker-compose.example.yml
+*.secret
+secrets.*
 
 # vercel
 .vercel
